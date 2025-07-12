@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../port.css">
+    <script src="../port.js" defer></script>
+    <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="../1.Home.html">🏠 Home</a></li>
+                <li><a href="../2.About/About.html">👩‍💻 About Me</a></li>
+                <li><a href="../3.Skills/Skills.html">🔬 Skills</a></li>
+                <li><a href="../4.Internships.html">📚 Internships</a></li>
+                <li><a href="Projects.html" class="active">🖥️ Projects</a></li>
+                <li><a href="../6.Contact/Contact.html">🏕️ Contact</a></li>
+            </ul>
+            <div class="hamburger">♻️</div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="project-tabs">
+            <center> <button class="tab-button active" data-tab="personal-projects">Personal Projects</button>
+            <button class="tab-button" data-tab="internship-projects">Internship Projects</button> </center>
+        </div>
+
+        <section class="projects-section">
+            <div class="project-category" id="personal-projects">
+                <h2 class="projects-section-title">Personal Projects</h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front" style="background-image: url('../favicon.png');">
+                                <div class="card-hint">Click to view description</div>
+                            </div>
+                            <div class="project-card-back">
+                                <h3>Portfolio Website</h3>
+                                <p>Description:</p>
+                                <ul class="project-description-list">
+                                    <li>Created a personal portfolio website to showcase skills, internships, and projects.</li>
+                                    <li>Implemented a responsive design with a modern UI, featuring smooth animations and a mobile-friendly navigation system.</li>
+                                    <li>Utilized CSS Grid and Flexbox for layout, with JavaScript for interactive elements like hamburger menu and form handling.</li>
+                                </ul>
+                                <p>Technologies: HTML, CSS, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="project-title">Portfolio Website</div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front" style="background-image: url('To-Do.webp');">
+                                <div class="card-hint">Click to view description</div>
+                            </div>
+                            <div class="project-card-back">
+                                <h3>To-Do List Manager</h3>
+                                <p>Description:</p>
+                                <ul class="project-description-list">
+                                    <li>The provided code is a Todo List application built using HTML, CSS, and JavaScript.</li>
+                                    <li>Allows users to create, edit, and delete tasks, with the ability to mark them as done.</li>
+                                    <li>Persists the user's name and todo list items using localStorage.</li>
+                                    <li>Features: Add new tasks with a name, display all tasks with their completion status, mark tasks as completed, delete tasks.</li>
+                                </ul>
+                                <p>Technologies: HTML, CSS, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="project-title">To-Do List Manager</div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="project-category" id="internship-projects" style="display: none;">
+                <h2 class="projects-section-title">Vault of Codes Internship Projects</h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front" style="background-image: url('password.jpg');">
+                                <div class="card-hint">Click to view description</div>
+                            </div>
+                            <div class="project-card-back">
+                                <h3>Password Manager</h3>
+                                <p>Description:</p>
+                                <ul class="project-description-list">
+                                    <li>Designed and implemented a command-line password manager that securely stores, retrieves, and manages user passwords using strong encryption.</li>
+                                    <li>Integrated features such as password generation, strength checking, and activity logging to enhance usability and security.</li>
+                                </ul>
+                                <p>Technologies: Python, Cryptography, Getpass, Random, Logging</p>
+                            </div>
+                        </div>
+                        <div class="project-title">Password Manager</div>
+                    </div>
+                </div>
+
+                <h2 class="projects-section-title">Teachnook Internship Projects</h2>
+                <div class="projects-container">
+                   <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front" style="background-image: url('Sentiment_Analysis.jpg');">
+                                <div class="card-hint">Click to view description</div>
+                            </div>
+                            <div class="project-card-back">
+                                <h3>Sentiment Analysis Chatbot</h3>
+                                <p>Description:</p>
+                                <ul class="project-description-list">
+                                    <li>Developed a conversational chatbot that detects and classifies user sentiment (positive, negative, neutral) in real time using Natural Language Processing techniques.</li>
+                                    <li>Enabled the bot to personalize responses based on the user's emotional tone, enhancing user engagement and providing empathetic support.</li>
+                                </ul>
+                                <p>Technologies: Python, NLTK, TextBlob, Langdetect, JSON, Logging</p>
+                            </div>
+                        </div>
+                        <div class="project-title">Sentiment Analysis Chatbot</div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Burada A V D Gangadhara Rao All rights reserved.
+    </footer>
+</body>
+</html>
